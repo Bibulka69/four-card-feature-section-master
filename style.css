@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #FAFAFA;
+    font-family: 'Poppins', serif;
+    color: #535564;
+}
+
+main{
+    align-items: center;
+    min-height: 100vh;
+    padding: 10rem 0;
+}
+
+.card-list--container {
+    margin: 0 auto;
+    max-width: 71.875rem;
+}
+
+.card-list__container--middle-column {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 auto;
+}
+
+.card-list__container--column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.card-list__introduction--inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 31.25rem;
+    margin: 0 auto;
+    padding-bottom: 4rem;
+}
+
+.card__title--medium {
+    font-weight: 200;
+    font-size: 2.25rem;
+    line-height: 130%;
+}
+
+.card__title--large {
+    font-weight: 600;
+    font-size: 2.25rem;
+    line-height: 130%;
+}
+
+.card__title--large_inner {
+    padding-bottom: 1rem;
+}
+
+.card-list__text {
+    text-align: center;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 150%;
+}
+
+.card-list__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+    padding: 2rem 2rem;
+    background-color: #ffffff;
+    box-shadow: 8px 8px 20px #DAE2EB;
+    border-radius: 0.5rem;
+    width: 21.875rem;
+}
+
+.card__lead {
+    border-top: 5px #52CECC solid;      
+}
+
+.card__team {
+    border-top: 5px #ED5355 solid;      
+}
+
+.card__karma {
+    border-top: 5px #60A0EA solid;      
+}
+
+.card__calculator {
+    border-top: 5px #FBAF4F solid;      
+}
+
+.card__title--small {
+    line-height: 200%;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.card__text {
+    display: inline-block;
+    font-size: 0.813rem;
+    font-weight: 400;
+    width: 250px;
+    line-height: 160%;
+}
+
+.card__img {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding: 2rem 0 1rem 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 64rem) {
+    .card-list__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .card__title--medium {
+        font-size: 1.5rem;
+    }
+
+    .card__title--large {
+        font-size: 1.5rem;
+    }
+
+    .card-list__text {
+        max-width: 320px;
+    }
+}
